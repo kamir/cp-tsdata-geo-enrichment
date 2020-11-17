@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>confluent.io</groupId>
+    <artifactId>entoso-e-use-case-3</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <jung.version>2.0.1</jung.version>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <avro.version>1.10.0</avro.version>
+        <kafka.avro.serializer.version>5.3.3</kafka.avro.serializer.version>
+        <kafka.version>2.5.0</kafka.version>
+        <confluent.version>6.0.0</confluent.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/io.confluent/kafka-json-serializer -->
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-json-serializer</artifactId>
+            <version>6.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung2</artifactId>
+            <version>${jung.version}</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-api</artifactId>
+            <version>${jung.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-visualization</artifactId>
+            <version>${jung.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-graph-impl</artifactId>
+            <version>${jung.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-algorithms</artifactId>
+            <version>${jung.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.jung</groupId>
+            <artifactId>jung-io</artifactId>
+            <version>${jung.version}</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20090211</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>2.6.0</version>
+
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+
+        </dependency>
+
+
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>common-config</artifactId>
+            <version>${confluent.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>common-utils</artifactId>
+            <version>${confluent.version}</version>
+
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+
+        </dependency>
+
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-schema-registry-client</artifactId>
+            <version>${confluent.version}</version>
+
+            <exclusions>
+                <exclusion>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-log4j12</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>log4j</groupId>
+                    <artifactId>log4j</artifactId>
+                </exclusion>
+            </exclusions>
+
+        </dependency>
+
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-avro-serializer</artifactId>
+            <version>${kafka.avro.serializer.version}</version>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <repositories>
+
+        <repository>
+            <id>central2</id>
+            <name>check central first to avoid a lot of not found warnings</name>
+            <url>https://repo1.maven.org/maven2</url>
+        </repository>
+
+        <repository>
+            <id>axis</id>
+            <name>axis</name>
+            <url>https://people.apache.org/repo/m1-ibiblio-rsync-repository/org.apache.axis2/</url>
+        </repository>
+        <repository>
+            <id>sonatype-oss</id>
+            <name>Sonatype OSS</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>conveyal</id>
+            <name>Conveyal Maven Repository</name>
+            <url>https://maven.conveyal.com/</url>
+        </repository>
+
+    </repositories>
+
+</project>

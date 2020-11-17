@@ -1,0 +1,4 @@
+id,countryCode,region,lat,lon,production,consumption,imports,exports
+1,BE,Region-Belgium,50.6296641, 4.6516806,500,100,  0,400
+2,DE,Region-Germany,51.1688549,10.3486621,  0,200,200,0
+3,FR,Region-France ,47.0297695, 2.3727525,  0,200,200,0
