@@ -1,9 +1,9 @@
 FROM gradle:jdk8
 
 RUN apt-get update
-#RUN apt-get install -y coreutils
-RUN apt-get install -y git
 RUN apt-get install -y maven
+RUN apt-get install -y coreutils
+RUN apt-get install -y git
 
 RUN mkdir /app
 RUN mkdir /app/cp-tsdata-geo-enrichment

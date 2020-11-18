@@ -11,9 +11,18 @@ import java.io.FileWriter;
 
 public class GeoJSONExporter {
 
-    static File out1 = new File( "/Users/mkampf/GITHUB.confluent/ENTSO-PoC/GITHUB/cp-tsdata-geo-enrichment/data/out/nodes.geojson" );
-    static File out2 = new File( "/Users/mkampf/GITHUB.confluent/ENTSO-PoC/GITHUB/cp-tsdata-geo-enrichment/data/out/links-result.json" );
-    static File out3 = new File( "/Users/mkampf/GITHUB.confluent/ENTSO-PoC/GITHUB/cp-tsdata-geo-enrichment/data/out/grid.json" );
+    public static String exportFolder = "./data/out";
+
+    public static void initExportFolder( String path ) {
+        exportFolder = path;
+        out1 = new File( exportFolder + "/nodes.geojson" );
+        out2 = new File( exportFolder + "/links-result.json" );
+        out3 = new File( exportFolder + "/grid.json" );
+    }
+
+    static File out1 = new File( "./data/out/nodes.geojson" );
+    static File out2 = new File( "./data/out/links-result.json" );
+    static File out3 = new File( "./data/out/grid.json" );
 
     /*
     public static void generateNotes() throws Exception {
