@@ -1,6 +1,7 @@
 FROM gradle:jdk8
 
 RUN apt-get update
+RUN apt-get install -y coreutils
 RUN apt-get install -y git
 RUN apt-get install -y maven
 
@@ -15,4 +16,5 @@ COPY ccloud.props.secure /app/cp-tsdata-geo-enrichment/ccloud.props
 
 WORKDIR /app/cp-tsdata-geo-enrichment/
 
-CMD ['java -jar /app/cp-tsdata-geo-enrichment/target/cp-tsx-geoenrichment-use-case-1.0-SNAPSHOT.jar']
+#CMD ['java -jar /app/cp-tsdata-geo-enrichment/target/cp-tsx-geoenrichment-use-case-1.0-SNAPSHOT.jar']
+CMD ['ls']
