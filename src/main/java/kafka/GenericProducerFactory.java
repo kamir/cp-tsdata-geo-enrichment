@@ -15,7 +15,7 @@ public class GenericProducerFactory {
 
     public static Properties getClientProperties() {
 
-        File f = new File( "/Users/mkampf/GITHUB.confluent/ENTSO-PoC/GITHUB/cp-tsdata-geo-enrichment/ccloud.props"  );
+        File f = new File( "./ccloud.props"  );
 
         System.out.println( ">>> Client properties from file: " + f.getAbsolutePath() + " ("+f.canRead()+")");
 
