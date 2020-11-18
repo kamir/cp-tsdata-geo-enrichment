@@ -73,7 +73,7 @@ public class SimulationScenario {
 
         System.out.println( "> Now we have to define the streams and tables in KSQLDB. " );
 
-        // simulateFlow();
+        simulateFlow();
 
         System.out.println( "> Show GeoJSON data in browser: https://utahemre.github.io/geojsontest.html " );
 
