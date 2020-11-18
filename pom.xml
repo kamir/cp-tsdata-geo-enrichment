@@ -5,8 +5,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>confluent.io</groupId>
-    <artifactId>entoso-e-use-case-3</artifactId>
+    <artifactId>cp-tsx-geoenrichment-use-case</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <name>cp-tsx-geoenrichment-use-case</name>
 
     <properties>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -16,8 +18,11 @@
 
         <avro.version>1.10.0</avro.version>
         <kafka.avro.serializer.version>5.3.3</kafka.avro.serializer.version>
-        <kafka.version>2.5.0</kafka.version>
+
+        <kafka.version>2.6.0</kafka.version>
+
         <confluent.version>6.0.0</confluent.version>
+
     </properties>
 
     <dependencies>
@@ -92,7 +97,7 @@
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
-            <version>2.6.0</version>
+            <version>${kafka.version}</version>
 
             <exclusions>
                 <exclusion>
