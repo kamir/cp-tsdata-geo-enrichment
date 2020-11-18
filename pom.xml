@@ -157,11 +157,28 @@
             <version>${kafka.avro.serializer.version}</version>
         </dependency>
 
-
     </dependencies>
 
 
     <repositories>
+
+        <repository>
+            <id>ksqlDB</id>
+            <name>ksqlDB</name>
+            <url>https://ksqldb-maven.s3.amazonaws.com/maven/</url>
+        </repository>
+
+        <repository>
+            <id>confluent_repo</id>
+            <name>confluent_repo</name>
+            <url>http://packages.confluent.io/maven/</url>
+        </repository>
+
+        <repository>
+            <id>confluent</id>
+            <name>Confluent</name>
+            <url>https://jenkins-confluent-packages-beta-maven.s3.amazonaws.com/6.1.0-beta200825192044/1/maven/</url>
+        </repository>
 
         <repository>
             <id>central2</id>
@@ -174,11 +191,13 @@
             <name>axis</name>
             <url>https://people.apache.org/repo/m1-ibiblio-rsync-repository/org.apache.axis2/</url>
         </repository>
+
         <repository>
             <id>sonatype-oss</id>
             <name>Sonatype OSS</name>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
+
         <repository>
             <id>conveyal</id>
             <name>Conveyal Maven Repository</name>
