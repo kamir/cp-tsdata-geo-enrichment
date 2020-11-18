@@ -89,7 +89,6 @@
             <version>20090211</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
@@ -107,7 +106,6 @@
             </exclusions>
 
         </dependency>
-
 
         <dependency>
             <groupId>io.confluent</groupId>
@@ -159,19 +157,18 @@
 
     </dependencies>
 
-
     <repositories>
-
-        <repository>
-            <id>ksqlDB</id>
-            <name>ksqlDB</name>
-            <url>https://ksqldb-maven.s3.amazonaws.com/maven/</url>
-        </repository>
 
         <repository>
             <id>confluent_repo</id>
             <name>confluent_repo</name>
             <url>http://packages.confluent.io/maven/</url>
+        </repository>
+
+        <repository>
+            <id>ksqlDB</id>
+            <name>ksqlDB</name>
+            <url>https://ksqldb-maven.s3.amazonaws.com/maven/</url>
         </repository>
 
         <repository>

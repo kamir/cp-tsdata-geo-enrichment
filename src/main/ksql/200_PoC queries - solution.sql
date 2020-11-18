@@ -61,7 +61,6 @@ CREATE TABLE linkTable (
      VALUE_FORMAT = 'JSON'
 );
 
-
 -- stream with data points from raw_dp topic
 CREATE STREAM gridLinkFlowDataStream (
      rowkey VARCHAR KEY,
@@ -211,6 +210,9 @@ emit changes;
 Select * from crossRegionFlowStream4 emit changes;
 
 
+######################
+#  END OF DEMO Code  #
+######################
 
 ####################################################
 #
