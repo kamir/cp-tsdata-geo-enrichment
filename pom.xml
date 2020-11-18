@@ -49,6 +49,7 @@
             <version>4.12</version>
         </dependency>
 
+<!--
         <dependency>
             <groupId>net.sf.jung</groupId>
             <artifactId>jung2</artifactId>
@@ -85,6 +86,8 @@
             <artifactId>jung-io</artifactId>
             <version>${jung.version}</version>
         </dependency>
+
+        -->
 
         <dependency>
             <groupId>org.json</groupId>
