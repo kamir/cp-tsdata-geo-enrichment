@@ -46,6 +46,8 @@ public class SimulationScenario {
      */
     public static void main(String[] args) throws Exception {
 
+        CSVFileRepository.repoPath = args[0];
+
         System.out.println( "> Read model files from: " + CSVFileRepository.repoPath );
 
         powerPlants = CSVFileRepository.getPowerPlantsFromRepository();

@@ -17,4 +17,4 @@ COPY ccloud.props.secure /app/cp-tsdata-geo-enrichment/ccloud.props
 WORKDIR /app/cp-tsdata-geo-enrichment/
 
 #CMD ['java -jar /app/cp-tsdata-geo-enrichment/target/cp-tsx-geoenrichment-use-case-1.0-SNAPSHOT.jar']
-CMD exec java -jar /app/cp-tsdata-geo-enrichment/target/cp-tsx-geoenrichment-use-case-1.0-SNAPSHOT.jar
+CMD exec java -jar /app/cp-tsdata-geo-enrichment/target/cp-tsx-geoenrichment-use-case-1.0-SNAPSHOT.jar /app/cp-tsdata-geo-enrichment/data/in
