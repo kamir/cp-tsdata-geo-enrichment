@@ -60,35 +60,30 @@
             <groupId>net.sf.jung</groupId>
             <artifactId>jung-api</artifactId>
             <version>${jung.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>net.sf.jung</groupId>
             <artifactId>jung-visualization</artifactId>
             <version>${jung.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>net.sf.jung</groupId>
             <artifactId>jung-graph-impl</artifactId>
             <version>${jung.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>net.sf.jung</groupId>
             <artifactId>jung-algorithms</artifactId>
             <version>${jung.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>net.sf.jung</groupId>
             <artifactId>jung-io</artifactId>
             <version>${jung.version}</version>
-            <scope>compile</scope>
         </dependency>
 
         <dependency>

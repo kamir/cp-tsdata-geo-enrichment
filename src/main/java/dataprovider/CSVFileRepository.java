@@ -13,13 +13,13 @@ import java.util.Vector;
 
 public class CSVFileRepository {
 
-    static String repoPath = "/Users/mkampf/GITHUB.confluent/ENTSO-PoC/GITHUB/cp-tsdata-geo-enrichment/data/in/";
+    public static String repoPath = "./cp-tsdata-geo-enrichment/data/in/";
 
     public static Vector<PowerPlant> getPowerPlantsFromRepository() throws IOException {
 
         Vector<PowerPlant> powerPlants = new Vector<>();
 
-        File f = new File( repoPath + "ENTSO-E-Grid - Sheet2.csv" );
+        File f = new File( repoPath + "E-Grid - Sheet2.csv" );
         System.out.println( f.getAbsolutePath() + " => " + f.exists() );
 
         /**
@@ -54,7 +54,7 @@ public class CSVFileRepository {
         /**
          *   Load Stations
          */
-        FileReader fr2 = new FileReader(repoPath + "ENTSO-E-Grid - Sheet1.csv" );
+        FileReader fr2 = new FileReader(repoPath + "E-Grid - Sheet1.csv" );
 
         BufferedReader br2 = new BufferedReader( fr2 );
 
@@ -81,9 +81,9 @@ public class CSVFileRepository {
         /**
          *   Load regions
          */
-        FileReader fr3 = new FileReader( repoPath + "ENTSO-E-Grid - Sheet3.csv" );
-        FileReader fr31 = new FileReader(repoPath + "ENTSO-E-Grid - Sheet3-1.csv" );
-        FileReader fr32 = new FileReader(repoPath + "ENTSO-E-Grid - Sheet3-2.csv" );
+        FileReader fr3 = new FileReader( repoPath + "E-Grid - Sheet3.csv" );
+        FileReader fr31 = new FileReader(repoPath + "E-Grid - Sheet3-1.csv" );
+        FileReader fr32 = new FileReader(repoPath + "E-Grid - Sheet3-2.csv" );
 
         BufferedReader br3 = new BufferedReader( fr3 );
 
