@@ -4,3 +4,9 @@
 [submodule "ops/cp-all-in-one"]
 	path = ops/cp-all-in-one
 	url = https://github.com/confluentinc/cp-all-in-one
+[submodule "ops/--name"]
+	path = ops/--name
+	url = https://github.com/christophschubert/kafka-clusterstate-tools
+[submodule "cs-kst"]
+	path = ops/kafka-clusterstate-tools
+	url = https://github.com/christophschubert/kafka-clusterstate-tools
