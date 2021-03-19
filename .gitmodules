@@ -1,0 +1,6 @@
+[submodule "ops/cloud-app-instance"]
+	path = ops/cloud-app-instance
+	url = https://github.com/kamir/cloud-app-instance
+[submodule "ops/cp-all-in-one"]
+	path = ops/cp-all-in-one
+	url = https://github.com/confluentinc/cp-all-in-one
