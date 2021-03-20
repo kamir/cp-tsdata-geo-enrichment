@@ -10,3 +10,12 @@
 [submodule "cs-kst"]
 	path = ops/kafka-clusterstate-tools
 	url = https://github.com/christophschubert/kafka-clusterstate-tools
+[submodule "ops/mk-kafka-clusterstate-tools"]
+	path = ops/mk-kafka-clusterstate-tools
+	url = https://github.com/kamir/kafka-clusterstate-tools
+[submodule "ops/ks-inspector"]
+	path = ops/ks-inspector
+	url = https://github.com/kamir/ks-inspector
+[submodule "ops/kstreams-perf-test"]
+	path = ops/kstreams-perf-test
+	url = https://github.com/kamir/kstreams-perf-test
