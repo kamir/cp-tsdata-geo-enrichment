@@ -10,7 +10,7 @@ public class PlantProducer extends GenericProducerFactory {
 
     static Properties props;
 
-    static String TOPIC = "grid-plants";
+    static String TOPIC = namespace + "grid-plants";
 
     // static Producer<String, PowerPlant> producer = null;
 
@@ -53,5 +53,3 @@ public class PlantProducer extends GenericProducerFactory {
     }
 
 }
-
-

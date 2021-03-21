@@ -10,7 +10,7 @@ public class StationProducer extends GenericProducerFactory {
 
     static Properties props;
 
-    static String TOPIC = "grid-stations";
+    static String TOPIC = namespace + "grid-stations";
 
     public static void init( String appId ) {
         Properties props = GenericProducerFactory.getClientProperties();
@@ -52,5 +52,3 @@ public class StationProducer extends GenericProducerFactory {
 
 
 }
-
-

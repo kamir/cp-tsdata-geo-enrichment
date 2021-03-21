@@ -1,1 +1,18 @@
-TEST
+{
+  "type": "record",
+  "namespace": "org.apache.opentsx",
+  "name": "dataSampleRecord",
+  "doc": "Sample schema to help you get started.",
+  "fields": [
+    {
+      "name": "my_field1",
+      "type": "int",
+      "doc": "The int type is a 32-bit signed integer."
+    },
+    {
+      "name": "my_field2",
+      "type": "double",
+      "doc": "The double type is a double precision (64-bit) IEEE 754 floating-point number."
+    }
+  ]
+}

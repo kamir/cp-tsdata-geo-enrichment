@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class GridLinkProducer extends GenericProducerFactory {
 
-    static String TOPIC = "grid-static-links";
+    static String TOPIC = namespace + "grid-static-links";
 
     // public static Producer<String, GridLink> producer = null;
 
@@ -53,5 +53,3 @@ public class GridLinkProducer extends GenericProducerFactory {
     };
 
 }
-
-

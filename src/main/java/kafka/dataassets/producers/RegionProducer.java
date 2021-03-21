@@ -10,7 +10,7 @@ public class RegionProducer extends GenericProducerFactory {
 
     static Properties props;
 
-    static String TOPIC = "grid-regions";
+    static String TOPIC = namespace + "grid-regions";
 
     // static Producer<String, Region> producer = null;
 
@@ -53,5 +53,3 @@ public class RegionProducer extends GenericProducerFactory {
 
 
 }
-
-

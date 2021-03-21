@@ -11,6 +11,8 @@ import java.util.Properties;
 
 public class GenericProducerFactory {
 
+    public static String namespace = "cp-tsdata.demo-2.";
+
     public static Producer producer = null;
 
     public static Properties getClientProperties() {

@@ -11,7 +11,7 @@ public class PowerSampleProducer extends GenericProducerFactory {
 
     static Properties props;
 
-    static String TOPIC = "grid-link-flow-data";
+    static String TOPIC = namespace + "grid-link-flow-data";
 
     // static Producer<String, PowerFlowSample> producer = null;
 
@@ -61,5 +61,3 @@ public class PowerSampleProducer extends GenericProducerFactory {
 
 
 }
-
-
